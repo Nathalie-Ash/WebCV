@@ -19,6 +19,7 @@ $user->birthdate=VarExist($_POST["birthdate"]);
 
 if (InsertUserToFilefromObject($user)) {
     echo "Signup successful!";
+    echo "$user";
     header("location:../pages/index.php");
 } else {
     echo "Signup failed!";
@@ -34,9 +35,9 @@ function InsertUserToFilefromObject($user){
         "password" => $user->pass,
         "sex" => $user->sex,
         "birthdate" => $user->birthdate,
-        // "language" => $user->language
+        
     );
-    //print_r($userarray);
+
 
     $newuser = json_encode($userarray, JSON_PRETTY_PRINT);
 
