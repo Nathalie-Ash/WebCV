@@ -378,7 +378,6 @@ span.psw {
     ,#loginBtn, #signupBtn   {
     background-color: #2d758c;
     color: white;
-    padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
@@ -386,7 +385,8 @@ span.psw {
     width: 140px;
     height: 40px;
     font-size: 20px;
-    text-align: center; /* Add this line */
+    text-align: center; 
+    box-sizing: border-box;
 }
 
 
