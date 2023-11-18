@@ -4,7 +4,7 @@ function VarExist($var){
     if (isset($var)){
         return $var;
     }else{
-        header("location:../pages/index.php");
+        header("location:../index.php");
     }
 }
 
@@ -18,9 +18,10 @@ $user->birthdate=VarExist($_POST["birthdate"]);
 
 
 if (InsertUserToFilefromObject($user)) {
+   
+    header("location:../index.php");
     echo "Signup successful!";
     echo "$user";
-    header("location:../pages/index.php");
 } else {
     echo "Signup failed!";
 }

@@ -1,7 +1,7 @@
 <?php
     session_start();
     if (!isset($_SESSION["username"])){
-        header("location:../pages/index.php");
+        header("location:../index.php");
     }
 
 ?>
@@ -24,7 +24,7 @@
             <img src="../images/character.jpg" class="profile">
             <div class="row" id="header">
                 <div id="dropdown-menu">
-                    <a href="index.php">
+                    <a href="../index.php">
                         <i class="fas fa-bars" id="dropdown-menu"></i>
                     </a>
                     <div class="dropdown-content">

@@ -8,32 +8,31 @@ session_destroy();
 <html>
 
 <head>
-    <link rel="stylesheet" href="../cv.css">
+    <link rel="stylesheet" href="cv.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
 
 <body
-    style="background-image:url('../images/background.jpg'); background-color: #CCDADD; background-repeat: no-repeat;">
+    style="background-image:url('images/background.jpg'); background-color: #CCDADD; background-repeat: no-repeat;">
     <div>
     <div id="topNav"> 
         <div id="userProfileContainer">
-            <img src="../images/character.jpg" class="profile">
+            <img src="images/character.jpg" class="profile">
             <div class="row" id="header">
                 <div id="dropdown-menu">
-                    <a href="index.php">
                         <i class="fas fa-bars" id="dropdown-menu"></i>
-                    </a>
+                    
                     <div class="dropdown-content">
                         <ul>
-                            <a href="gallery.php">
+                            <a href="pages/gallery.php">
                                 <li><i class="fas fa-images" style="padding-right: 5px;"></i>Gallery</li>
                             </a>
-                            <a href="CV.php">
+                            <a href="pages/CV.php">
                                 <li><i class="fas fa-id-badge" style="padding-right: 15px;"></i>Work</li>
                             </a>
-                            <a href="contact.php">
+                            <a href="pages/contact.php">
                                 <li><i class="fas fa-user" style="padding-right: 8px;"></i>Contact</li>
                             </a>
                         </ul>
@@ -58,7 +57,7 @@ session_destroy();
                 </h1>
                
                 <div class="inn">
-                    <form action = ".././BE/login.php" method = "POST" id="login-form">
+                    <form action = "BE/login.php" method = "POST" id="login-form">
                     <br>
                     <label id="user" for="user" > <b>Username</b></label>
                     <br>
@@ -70,7 +69,7 @@ session_destroy();
                     <br><br>
                     <input type="button" id="loginBtn" value ="Login" onclick ="login()">
                     <br>
-                    <p style = "color:#062a3c "> Don't have an account? <a href="signup.html">Sign Up</a></p>
+                    <p style = "color:#062a3c "> Don't have an account? <a href="pages/signup.html">Sign Up</a></p>
                 </div>
         
         

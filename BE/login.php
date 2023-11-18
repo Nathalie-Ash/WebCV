@@ -18,10 +18,11 @@ if ($loggedIn) {
     session_start();
         $_SESSION["username"]=$un;
         $_SESSION["fullname"]=$user["fullname"];
-        echo "login successfull";
+        echo "login successful";
     header("location:../pages/CV.php");
+    
 } else {
-    header("location:../pages/index.php");
+    header("location:index.php");
     echo "Wrong username or password";
 }
 ?>
