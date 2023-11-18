@@ -71,7 +71,7 @@ session_destroy();
                     <br><br>
                     <input type="button" id="loginBtn" value ="Login" onclick ="login()">
                     <br>
-                    <p> Don't have an account? <a href="signup.html">Sign Up</a></p>
+                    <p style = "color:#062a3c "> Don't have an account? <a href="signup.html">Sign Up</a></p>
                 </div>
         
         

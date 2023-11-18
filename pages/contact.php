@@ -67,7 +67,9 @@
                 <div class="div1">
                     <div class="content-div">
                         <p class="fas fa-envelope" style="font-size: 30px;padding-bottom: 7px;"></p><br>Email
-                        <p><br>nathalie.elashkar@lau.edu</p>
+                        <p><a href="mailto:jnathalie.elashkar@lau.edu">nathalie.elashkar@lau.edu</a></p>
+                    
+                        
                     </div>
                 </div>
                 <div class="div1">
