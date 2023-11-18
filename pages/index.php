@@ -63,15 +63,15 @@ session_destroy();
                     <br>
                     <label id="user" for="user" > <b>Username</b></label>
                     <br>
-                    <input style ="border-radius: 50px; border:solid 2px #062a3c;" type="text" placeholder=" Enter Username" name="username" required>
+                    <input style ="border-radius: 50px; border:solid 2px #062a3c;padding: 5px;" type="text" placeholder=" Enter Username" name="username" required>
                     <br><br>
                     <label style="margin: 10px;" id="password" for="password"> <b>Password</b></label>
                     <br>
-                    <input style ="border-radius:  50px; border: solid 2px #062a3c;" id="pass" type="password" placeholder=" Enter Password" name="password" required>
+                    <input style ="border-radius:  50px; border: solid 2px #062a3c;padding: 5px;" id="pass" type="password" placeholder=" Enter Password" name="password" required>
                     <br><br>
                     <input type="button" id="loginBtn" value ="Login" onclick ="login()">
                     <br>
-                    <p> Don't have an account? <a href="signup.html">Sign Up</a></p>
+                    <p style = "color:#062a3c "> Don't have an account? <a href="signup.html">Sign Up</a></p>
                 </div>
         
         

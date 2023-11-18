@@ -355,17 +355,16 @@ p{
   margin: auto;
   margin-top: 10px;
   padding: 20px;
-  background-color: rgb(255, 255, 255,0.1);
- 
+background-color: hsl(200, 61%, 29%, 0.4);
   border: 2px solid #062a3c;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
 
 }
 
 .container {
   position: relative;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
 span.psw {
@@ -379,7 +378,7 @@ span.psw {
     background-color: #2d758c;
     color: white;
     margin: 8px 0;
-    border: none;
+    border: 2px solid #062a3c;
     cursor: pointer;
     border-radius: 50px;
     width: 140px;
