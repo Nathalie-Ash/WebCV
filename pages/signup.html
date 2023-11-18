@@ -1,0 +1,131 @@
+<?php 
+session_start();
+session_unset();
+session_destroy();
+?>
+
+
+<html>
+
+<head>
+    <link rel="stylesheet" href=".././cv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body
+    style="background-image:url('../images/background.jpg'); background-color: #CCDADD; background-repeat: no-repeat;">
+    <div>
+        <div id="topNav">
+            <div class="division">
+                <div class="left-section">
+                    <img src="../images/character.jpg" class="profile">
+                </div>
+            </div>
+            <div class="row" id="header">
+                <div id="dropdown-menu">
+                    <a href="index.php"><span>Nathalie El Ashkar</span></a>
+                    <div class="dropdown-content">
+                        <ul>
+                            <a href="gallery.php">
+                                <li> <i class="fas fa-images" style="padding-right: 5px;"></i>Gallery</li>
+                            </a>
+                            <a href="CV.php">
+                                <li><i class="fas fa-id-badge" style="padding-right: 15px;"></i>Work</li>
+                            </a>
+                            <a href="contact.php">
+                                <li><i class="fas fa-user" style="padding-right: 8px;"></i>Contact</li>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div id="content" style="padding-left: 150px; padding-right: 150px;margin-top: 100px; ">
+
+
+        <section id="work">
+            <div class="work">
+                <h1 id="header_1" style="text-align: center;margin-bottom:10px;">
+                    Welcome to my Portfolio
+                </h1>
+               
+                <div class="inn" style="text-align: center;">
+                    <form action = ".././BE/signup.php" method = "POST" name="signup-form">
+                  
+                    <label id="fullname" for="fullname"> <b>Name</b></label>
+                    <br>
+                    <input style ="border-radius:  50px; border: solid 2px #062a3c;" type="text" name="fullname" placeholder =" Enter Name" >
+                    <br><br>
+                    <label  id ="birthday" for ="birthday"><b>Enter Birthday</b></label>
+                    <br>
+                    <input style ="border-radius:  50px; border: solid 2px #062a3c;" type="date" name ="birthday">
+                    <br><br>
+                    <input type="radio" name="sex"  id="r-male" value="m">
+                    <label for="r-male" style="font-size: 17px;color: #062a3c;">Male</label>
+                    <input type="radio" name="sex" checked id="r-female" value="f">
+                    <label for="r-female" style="font-size: 17px;color: #062a3c;">Female</label>
+                    <br>
+                    <input type="radio" name="sex" id="r-nts" value="f">
+                    <label for="r-nts" style="font-size: 17px;color: #062a3c;">Prefer Not To Say</label>
+                     <br><br>
+                    <label  id="user" for="username" > <b>Username</b></label>
+                    <br>
+                    <input style ="border-radius:  50px; border: solid 2px #062a3c;"  type="text" placeholder=" Enter Username" name="username" required>
+                    <br><br>
+                    <label  id="password" for="password"> <b>Password</b></label>
+                    <br>
+                    <input style ="border-radius:  50px; border: solid 2px #062a3c;" type="password" placeholder=" Enter Password" name="password" required>
+                    <br>
+                    <input style ="border-radius:  50px; border: solid 2px #062a3c;margin-top: 5px" type="password" placeholder=" Confirm Password" name="confirmPassword" required>
+                    <br>
+                    <input id="signupBtn" type="button" value ="Sign Up" onclick="SignUp()">
+                    <br>
+                    <p class="login" style="color: #062a3c;">Already have an account?<a href="index.php"> Login here</a></p>
+                </form>
+                </div>
+                <script>
+                    function SignUp(){
+                        var mForm=document.querySelector("form[name='signup-form']");
+                        var fullname=mForm.elements["fullname"].value;
+                        var username=mForm.elements["username"].value;
+                        var pass=mForm.elements["password"].value;
+                        var confPass=mForm.elements["confirmPassword"].value;
+                        var sex=mForm.elements["sex"].value;
+                        var birthdate=mForm.elements["birthday"].value;
+                       
+                        console.log("fullname:"+fullname);
+                        console.log("username:"+username);
+                        console.log("pass:"+pass);
+                        console.log("sex:"+sex);
+                        console.log("birthdate:"+birthdate);
+                
+                        if ((pass!=confPass)||(pass==""))
+                            alert("Passwords must be equal.");
+                        else
+                            mForm.submit();        
+                    }
+                    function ClearForm(){
+                        var mForm=document.querySelector("form[name='signup-form']");
+                        mForm.elements["fulltname"].value="";
+                        mForm.elements["username"].value="";
+                        mForm.elements["pass"].value="";
+                        mForm.elements["confirmPassword"].value="";
+                        mForm.elements["sex"].value="m";
+                        // mForm.elements["birthdate"].value="";
+                      
+                    }
+                </script>
+        
+        </section>
+    </div>
+    
+</body>

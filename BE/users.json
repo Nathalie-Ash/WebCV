@@ -1,0 +1,30 @@
+[
+    {
+        "fullname": "Nathalie",
+        "username": "Nathalie",
+        "password": "test123",
+        "sex": "female",
+        "birthdate": "03\/10\/03"
+    },
+    {
+        "fullname": "Nathalie El Ashkar",
+        "username": "Nathalie",
+        "password": null,
+        "sex": "f",
+        "birthdate": null
+    },
+    {
+        "fullname": "test",
+        "username": "tester",
+        "password": null,
+        "sex": "f",
+        "birthdate": null
+    },
+    {
+        "fullname": "test",
+        "username": "tester",
+        "password": null,
+        "sex": "f",
+        "birthdate": null
+    }
+]
