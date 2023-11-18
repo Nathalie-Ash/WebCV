@@ -12,6 +12,12 @@
         "password": "LadyD@04",
         "sex": "f",
         "birthdate": "04\/10\/1974"
+    },
+    {
+        "fullname": "Catherine",
+        "username": "Cathy",
+        "password": "Hello",
+        "sex": "f",
+        "birthdate": null
     }
-
 ]

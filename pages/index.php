@@ -17,19 +17,18 @@ session_destroy();
 <body
     style="background-image:url('../images/background.jpg'); background-color: #CCDADD; background-repeat: no-repeat;">
     <div>
-        <div id="topNav">
-            <div class="division">
-                <div class="left-section">
-                    <img src="../images/character.jpg" class="profile">
-                </div>
-            </div>
+    <div id="topNav"> 
+        <div id="userProfileContainer">
+            <img src="../images/character.jpg" class="profile">
             <div class="row" id="header">
                 <div id="dropdown-menu">
-                    <a href="index.php"><span>Nathalie El Ashkar</span></a>
+                    <a href="index.php">
+                        <i class="fas fa-bars" id="dropdown-menu"></i>
+                    </a>
                     <div class="dropdown-content">
                         <ul>
                             <a href="gallery.php">
-                                <li> <i class="fas fa-images" style="padding-right: 5px;"></i>Gallery</li>
+                                <li><i class="fas fa-images" style="padding-right: 5px;"></i>Gallery</li>
                             </a>
                             <a href="CV.php">
                                 <li><i class="fas fa-id-badge" style="padding-right: 15px;"></i>Work</li>
@@ -37,15 +36,15 @@ session_destroy();
                             <a href="contact.php">
                                 <li><i class="fas fa-user" style="padding-right: 8px;"></i>Contact</li>
                             </a>
-
                         </ul>
                     </div>
                 </div>
             </div>
+            <span style= "font-size: 20px; padding-left: 10px;" >Nathalie El Ashkar</span>
         </div>
-
-
     </div>
+</div>
+
 
 
 
