@@ -374,7 +374,7 @@ span.psw {
 }
 
 
-#loginBtn, #signupBtn  {
+#loginBtn, #signupBtn, #clearBtn  {
     background-color: #2d758c;
     color: white;
     padding: 14px 20px;
