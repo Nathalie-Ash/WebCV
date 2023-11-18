@@ -12,7 +12,7 @@ $user=new stdClass();
 
 $user->fullname=VarExist($_POST["fullname"]);
 $user->username=VarExist($_POST["username"]);
-$user->pass=VarExist($_POST["pass"]);
+$user->pass=VarExist($_POST["password"]);
 $user->sex=VarExist($_POST["sex"]);
 $user->birthdate=VarExist($_POST["birthdate"]);
 

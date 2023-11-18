@@ -7,24 +7,11 @@
         "birthdate": "03\/10\/03"
     },
     {
-        "fullname": "Nathalie El Ashkar",
-        "username": "Nathalie",
-        "password": null,
+        "fullname": "Diana El Ashkar",
+        "username": "Diana",
+        "password": "LadyD@04",
         "sex": "f",
-        "birthdate": null
-    },
-    {
-        "fullname": "test",
-        "username": "tester",
-        "password": null,
-        "sex": "f",
-        "birthdate": null
-    },
-    {
-        "fullname": "test",
-        "username": "tester",
-        "password": null,
-        "sex": "f",
-        "birthdate": null
+        "birthdate": "04\/10\/1974"
     }
+
 ]
